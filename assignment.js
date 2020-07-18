@@ -4,7 +4,7 @@ function feetToMile(feet){
 }
 var inputFeet = feetToMile(6000);
 
-console.log(inputFeet);
+console.log("mile", inputFeet);
 
 function woodCalculator(chair, table, bed){
     var chairCount = chair * 1;
@@ -14,12 +14,17 @@ function woodCalculator(chair, table, bed){
     return totalWoodCount;
 }
 var result = woodCalculator(2, 3, 5);
-console.log(result);
-
-function findLongestWord(str) {
-    var longestWord = str(' ').sort(function(a, b) { return b.length + a.length; });
-    return longestWord[0].length;
-  }
-  var result = findLongestWord["The", "quick", "brown", "fox", "jumped", "over", "the" ];
-  console.log(result);
+console.log("woodCount", result);
+function tinyFriend(name){
+    var smallest = name[0];
+    for(var i =0; i < name.length; i++){
+        var currentname = name[i];
+        if(currentname < smallest){
+            smallest = currentname;
+        }
+    }
+    return smallest;
+}
+ var smallest = tinyFriend(['Sabana', 'Polash', 'John']);
+ console.log(smallest);
 
